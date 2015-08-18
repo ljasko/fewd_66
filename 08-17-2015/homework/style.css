@@ -1,0 +1,17 @@
+header {
+	color: #D10081;
+	font-size: 36px;
+	font-family: helvetica, arial;
+}
+body {
+	background-color: #FFF;
+	padding: 20px;
+}
+p {
+	color: #00D150;
+	font-size: 24px;
+	font-family: helvetica, arial;
+}
+a {
+	color: #0019D1;
+}
