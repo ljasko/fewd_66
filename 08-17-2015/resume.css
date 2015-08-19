@@ -1,0 +1,60 @@
+body {
+	background-color: #191919;
+	color: #FFF;
+	font-family: helvetica, arial;
+	padding: 40px;
+	text-align: center;
+}
+
+header {
+	font-size: 124px;
+	text-transform: uppercase;
+	color: #FFB300;
+}
+
+section {
+	text-align: left;
+}
+
+h1 {
+	font-size: 84px;
+	color: #FFB300;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 48px;
+	color: #D60062;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 48px;
+	font-style: italic;
+}
+
+p {
+	font-size: 22px;
+}
+
+.company {
+	font-style: italic;
+}
+
+ul {
+	font-size: 22px;
+}
+
+a {
+	font-size: 22px;
+	text-decoration: none;
+	color: #4965D6;
+}
+
+a:hover {
+	color: #6F83D6;
+}
+
+a:visited {
+	color: #AAF53D;
+}
