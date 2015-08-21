@@ -1,0 +1,38 @@
+a {
+	text-decoration: none;
+}
+
+.active {
+	font-weight: bold;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin: auto;
+	width: 960px;
+}
+
+footer {
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Satisfy', cursive;
+	font-size: 48px;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Satisfy', cursive;
+	font-size: 24px;
+}
+
+li {
+	display: inline-block;
+	list-style: none;
+}
+
+.nav {
+	text-align: center;
+}
