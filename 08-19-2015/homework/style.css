@@ -1,12 +1,32 @@
 a {
+	color: #37645b;
 	text-decoration: none;
+}
+
+a:hover {
+	color: #9d202e;
+}
+
+a:visited {
+	color: #643740;
+}
+
+a:visited:hover {
+	color: #9d202e;
 }
 
 .active {
 	font-weight: bold;
 }
 
+.backtotop {
+	display: inline-block;
+	float: right;
+}
+
 body {
+	background-color: #e6c98f;
+	color: #443731;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	margin: auto;
@@ -15,11 +35,48 @@ body {
 
 footer {
 	text-align: center;
+	margin: 15px 0px
+}
+
+.gallery_full {
+	border: 1px solid #443731;
+	display: block;
+	margin: 0px 0px 27px 0px
+}
+
+.gallery_left {
+	border: 1px solid #443731;
+	display: inline-block;
+	float: left;
+	margin: 0px 15px 27px 0px
+}
+
+.gallery_mid {
+	border: 1px solid #443731;
+	display: inline-block;
+	float: center;
+	margin: 0px 15px 27px 15px
+}
+
+.gallery_right {
+	border: 1px solid #443731;
+	float: right;
+	display: inline-block;
+	margin: 0px 0px 27px 15px
+}
+
+.gallerytitle {
+	color: #443731;
+	display: inline-block;
+	float: left;
+	font-size: 36px;
 }
 
 h1 {
+	color: #443731;
 	font-family: 'Satisfy', cursive;
 	font-size: 48px;
+	padding-top: 15px;
 	text-align: center;
 }
 
@@ -33,6 +90,24 @@ li {
 	list-style: none;
 }
 
+.map {
+	background-image: url(assets/map.png);
+	background-position: top center;
+	border-bottom: 1px solid #443731;
+	border-top: 1px solid #443731;
+	height: 1118px;
+	padding-top: 30px;
+}
+
 .nav {
 	text-align: center;
+}
+
+section {
+	display: inline-block;
+	margin-top: 30px;
+}
+
+.spacing {
+	margin: 30px 0px 30px;
 }
