@@ -82,7 +82,12 @@ h1 {
 
 h2 {
 	font-family: 'Satisfy', cursive;
-	font-size: 24px;
+	font-size: 32px;
+}
+
+.intro {
+	padding: 100px 0px;
+	width: 430px;
 }
 
 li {
@@ -97,6 +102,60 @@ li {
 	border-top: 1px solid #443731;
 	height: 1118px;
 	padding-top: 30px;
+}
+
+.map_Assisi {
+	padding: 5px 0px 0px 480px;
+}
+
+.map_Chianti {
+	padding: 0px 0px 0px 380px;
+}
+
+.map_CinqueTerre {
+	padding: 15px 0px 0px 100px;
+}
+
+.map_Fiesole {
+	padding: 0px 0px 0px 360px;
+}
+
+.map_Florence {
+	padding: 0px 0px 0px 320px;
+}
+
+.map_GardaLake {
+	padding: 0px 0px 0px 280px;
+}
+
+.map_Pisa {
+	padding: 5px 0px 0px 260px;
+}
+
+.map_Rome {
+	padding: 15px 0px 0px 460px;
+}
+
+.map_SanGimignano {
+	padding: 0px 0px 0px 360px;
+}
+
+.map_Trentino {
+	padding: 0px 0px 0px 400px;
+}
+
+.map_Venice {
+	padding: 0px 0px 0px 440px;
+}
+
+.map_Verona {
+	padding: 0px 0px 0px 200px;
+}
+
+.maptitle {
+	display: block;
+	font-family: 'Satisfy', cursive;
+	font-size: 28px;
 }
 
 .nav {
