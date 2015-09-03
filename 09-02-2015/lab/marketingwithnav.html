@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex: Marketing with Nav</title>
+	<style>
+		* {
+			box-sizing:border-box;
+		}
+		article {
+			align-items: center;
+			background-color: #cecece;
+			display: flex;
+			/* created a flex parent to vertically center our children */
+			height: 280px;
+			margin: 10px 0;
+			padding: 30px;
+			text-align: center;
+		}
+		body {
+			font-family: arial;
+			font-size: 28px;
+		}
+		footer,
+		.logo,
+		a {
+			background-color: #cecece;
+			height: 140px;
+			padding: 30px;
+			margin: 10px 0;
+		}
+		header,
+		.primary,
+		.secondary {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+		}
+		.primary article {
+			width: 100%;
+		}
+		.secondary article {
+			width: calc(33.333% - 15px);
+		}
+	</style>
+</head>
+<body>
+	<h1>Flex: Marketing with Nav</h1>
+	<header>
+		<div class="logo">Logo Goes Here</div>
+		<nav>
+			<a href="#">Nav 1</a>
+			<a href="#">Nav 2</a>
+			<a href="#">Nav 3</a>
+			<a href="#">Nav 4</a>
+		</nav>
+	</header>
+	<main class="primary">
+		<article>
+			Article One
+		</article>
+	</main>
+	<section class="secondary">
+		<article>
+			Article One
+		</article>
+		<article>
+			Article Two
+		</article>
+		<article>
+			Article Three
+		</article>
+	</section>
+	<footer>
+		Footer
+	</footer>
+</body>
+</html>

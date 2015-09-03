@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex: Two-Column</title>
+	<style>
+		* {
+			box-sizing:border-box;
+		}
+		body {
+			font-family: arial;
+			font-size: 28px;
+		}
+		.box {
+			background-color: #cecece;
+			padding: 20px;
+		}
+		main {
+			display: flex;
+			height: 400px;
+			justify-content: space-between;
+		}
+		main aside {
+			padding: 20px;
+			width: calc(20% - 15px);
+		}
+		main section {
+			padding: 20px;
+			width: calc(60% - 15px);
+		}
+		header,
+		footer {
+			height: 160px;
+			margin: 15px 0px;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<h1>Flex: Three-Column</h1>
+	<header class="box">
+		Header
+	</header>
+	<main>
+		<aside class="box">
+			Aside
+		</aside>
+		<section class="box">
+			Section
+		</section>
+		<aside class="box">
+			Aside
+		</aside>
+	</main>
+	<footer class="box">
+		Footer
+	</footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex: Simple Marketing</title>
+	<style>
+		* {
+			box-sizing:border-box;
+		}
+		article {
+			align-items: center;
+			background-color: #cecece;
+			display: flex;
+			/* created a flex parent to vertically center our children */
+			height: 160px;
+			margin: 15px 0;
+			padding: 30px;
+			text-align: center;
+		}
+		body {
+			font-family: arial;
+			font-size: 28px;
+		}
+		header,
+		footer {
+			background-color: #cecece;
+			height: 160px;
+			padding: 30px;
+			margin: 15px 0;
+		}
+		.primary,
+		.secondary {
+			display: flex;
+			justify-content: space-between;
+		}
+		.primary article {
+			width: calc(50% - 15px);
+		}
+		.secondary article {
+			width: calc(33.333% - 15px);
+		}
+	</style>
+</head>
+<body>
+	<h1>Flex: Simple Marketing</h1>
+	<header>
+		Header
+	</header>
+	<main class="primary">
+		<article>
+			Article One
+		</article>
+		<article>
+			Article Two
+		</article>
+	</main>
+	<section class="secondary">
+		<article>
+			Article One
+		</article>
+		<article>
+			Article Two
+		</article>
+		<article>
+			Article Three
+		</article>
+	</section>
+	<footer>
+		Footer
+	</footer>
+</body>
+</html>
