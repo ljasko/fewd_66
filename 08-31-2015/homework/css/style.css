@@ -62,14 +62,11 @@ a {
   text-decoration: none;
 }
 
-aside {
-  display: inline-block;
-  float: right;
-  padding: 0px 120px 0px 20px;
-  width: calc(30% - 40px);
+aside div {
+  padding: 0px 0px 20px 40px;
 }
 
-aside .CTA {
+aside .learn {
   color: #033048;
   font-size: 22px;
   font-weight: 600;
@@ -78,7 +75,7 @@ aside .CTA {
 aside .links {
   color: #033048;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 aside h3 {
@@ -86,16 +83,21 @@ aside h3 {
   font-size: 32px;
   font-weight: 800;
 }
+aside img {
+  padding-top: 40px;
+}
 
 aside p {
   color: #033048;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 footer {
   background-color: #121212;
+  padding-top: 40px;
   text-align: center;
+  width: 100%;
 }
 
 footer img {
@@ -106,7 +108,6 @@ footer logo {
   color: #f9e42e;
   font-size: 48px;
   font-weight: 800;
-  margin-top: 40px;
 }
 
 footer p {
@@ -122,7 +123,8 @@ header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
-  padding: 0px 120px;
+  padding: 25px 120px;
+  width: 100%;
 }
 
 header a {
@@ -147,10 +149,17 @@ hr {
 }
 
 main {
-  display: inline-block;
-  float: left;
-  padding: 0px 20px 0px 120px;
-  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 120px;
+}
+
+main section {
+  width: 100%;
+}
+
+main aside {
+  width: calc(30% - 40px)
 }
 
 main article a {
@@ -165,33 +174,46 @@ main article h2 {
   font-weight: 600;
 }
 
+main article h4 {
+  color: #606161;
+  display: inline;
+  float: left;
+  font-size: 72px;
+  font-weight: 400;
+  margin: 0px 10px 0px 0px;
+}
+
+main article img {
+  width: 100%;
+}
+
 main article p {
   color: #606161;
   font-size: 24px;
   font-weight: 300;
+  padding-top: 10px;
 }
 
-section {
+.CTA {
   background-color: #f9e42e;
-  clear: both;
-  padding: 24px;
+  padding: 40px 0px;
   text-align: center;
+  width: 100%;
 }
 
-section a {
+.CTA a {
   background-color: #033048;
   border-radius: 5px;
   color: #fff;
-  display: inline-block;
-  font-weight: 800px;
   font-size: 24px;
-  padding: 10px 40px;
+  font-weight: 900px;
+  padding: 10px 60px;
   text-align: center;
-  text-decoration: none;
 }
 
 ul {
   list-style: none;
+  padding-left: 0px;
 }
 
 /******************************************
