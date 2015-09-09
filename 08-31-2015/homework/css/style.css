@@ -46,10 +46,11 @@ Developer @GA in NYC
 /*******************************************/
 
 body {
+     background-color: #f0efef;
      color: #000;
      font-size: 12px;
      line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
+     font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -57,12 +58,140 @@ body {
 /* LAYOUT
 /*******************************************/
 
-header {
+a {
+  text-decoration: none;
+}
 
+aside {
+  display: inline-block;
+  float: right;
+  padding: 0px 120px 0px 20px;
+  width: calc(30% - 40px);
+}
+
+aside .CTA {
+  color: #033048;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+aside .links {
+  color: #033048;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+aside h3 {
+  color: #033048;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+aside p {
+  color: #033048;
+  font-size: 22px;
+  font-weight: 300;
 }
 
 footer {
+  background-color: #121212;
+  text-align: center;
+}
 
+footer img {
+  padding: 40px 10px 40px;
+}
+
+footer logo {
+  color: #f9e42e;
+  font-size: 48px;
+  font-weight: 800;
+  margin-top: 40px;
+}
+
+footer p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600px;
+  padding-bottom: 40px;
+}
+
+header {
+  align-items: center;
+  background-color: #033048;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding: 0px 120px;
+}
+
+header a {
+  padding: 30px;
+  margin: 10px 0;
+}
+
+header logo {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+header nav a {
+  color: #f9e42e;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+hr {
+  margin: 40px 0px 60px;
+}
+
+main {
+  display: inline-block;
+  float: left;
+  padding: 0px 20px 0px 120px;
+  width: 70%;
+}
+
+main article a {
+  color: #033048;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+main article h2 {
+  color: #033048;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+main article p {
+  color: #606161;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+section {
+  background-color: #f9e42e;
+  clear: both;
+  padding: 24px;
+  text-align: center;
+}
+
+section a {
+  background-color: #033048;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 800px;
+  font-size: 24px;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 /******************************************
