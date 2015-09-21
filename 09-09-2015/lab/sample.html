@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Float Layout: Two Column</title>
+        <link rel="stylesheet" href="normalize.css">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .outer-container {
+                margin: auto;
+                max-width: 1060px;
+            }
+            .box {
+                background-color: #d8d8d8;
+                border: solid 1px #979797;
+                padding: 15px;
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+        .primary,
+        .secondary {
+            // background-color: red;
+            // margin-right: 10px;
+            float: left;
+            // height: 100px;
+            width: 50%;
+        }
+        .primary .foo {
+            background-color: red;
+            height: 100px;
+            margin-right: 10px;
+        }
+        .secondary .foo {
+            background-color: red;
+            height: 100px;
+            margin-left: 10px;
+        }
+        .footer {
+            float: left;
+            width: 100%;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="outer-container">
+            <h1>Float Layout: Two Column</h1>
+            <header class="box header">
+                HEADER
+            </header>
+            <section class="primary">
+                <div class="foo">LEFT</div>
+            </section>
+            <aside class="secondary">
+                <div class="foo">RIGHT</div>
+            </aside>
+            <footer class="box footer">
+                FOOTER
+            </footer>
+        </div>
+    </body>
+</html>
