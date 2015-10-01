@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+</head>
+<body>
+
+	<script>
+
+
+	// EXERCISE ONE
+
+	// Wrote function called hello
+	// that returned a nice message with our name
+
+	function hello(name) {
+		var hi = 'Hey there, ' + name;
+		return hi;
+	}
+
+	// Saved nice message into variable
+	var goodmorning = hello('Liz');
+
+	// Placed that variable into DOM
+	$('body').append(goodmorning);
+
+
+
+
+	// EXERCISE TWO
+
+	// Create a variable with your favorite number favNumOne
+
+	var favNumOne = 412;
+
+	// Write a function that takes the number,
+	// multiples it by two,
+	// and saves it in a new variable favNumTwo
+
+	function multiply(num) {
+		favNumTwo = num * 2;
+	}
+
+	// Call our function
+	multiply(favNumOne);
+
+	// Console our values
+
+	console.log(favNumOne)
+	console.log(favNumTwo)
+
+	</script>
+	
+</body>
+</html>
