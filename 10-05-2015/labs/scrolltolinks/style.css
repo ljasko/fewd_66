@@ -1,0 +1,31 @@
+body {
+	font-family: sans-serif;
+	font-size: 24px;
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	max-width: 960px;
+	padding: 40px;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+#cheese {
+	background-color: yellow;
+}
+
+#pepperoni {
+	background-color: orange;
+}
+
+#pineapple {
+	background-color: green;
+}
+
+#bacon {
+	background-color: red;
+}
