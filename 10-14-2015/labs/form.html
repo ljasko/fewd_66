@@ -1,0 +1,90 @@
+<!-- action url: https://docs.google.com/forms/d/1OPlZxJGmifRLLQkm0L0c7g03Cl4rL0sKgq441KqcTYI/formResponse
+
+name: entry.163214379
+name: entry.1769614116
+name: entry.249560222 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form Submit Doc</title>
+</head>
+<body>
+
+	<h1>Google Form</h1>
+	
+	<form action="https://docs.google.com/forms/d/1OPlZxJGmifRLLQkm0L0c7g03Cl4rL0sKgq441KqcTYI/formResponse">
+		<input type="text" class="form-name" placeholder="Name" name="entry.163214379">
+		<input type="email" class="form-email" placeholder="Email" name="entry.1769614116">
+		<input type="text" class="form-city" placeholder="Where are you from?" name="entry.249560222">
+		<input type="submit">
+	</form>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script>
+		// This is our event handler
+		$('form').on('submit', function() {
+
+			// Prevent form submission
+			event.preventDefault();
+
+	    	// Get the form instance; the second part is making it a jQuery object
+	        var $form = $(event.currentTarget);
+
+	        // Saving form name as a value
+	        var formName = $('.form-name').val();
+	        var formEmail = $('.form-email').val();
+	        var formCity = $('.form-city').val();
+
+        	// Checking to see if they're filled
+	       	if(formName != "") {
+	       		// Calling the function, and passing data
+	       		submitForm($form);
+	       	}
+	       	else {
+	       		alert('Please fill out your name!');
+	       	}
+
+	       	if(formEmail != "") {
+	       		submitForm($form);
+	       	}
+	       	else {
+	       		alert('Please fill out your email!');
+	       	}
+
+	        if(formCity != "") {
+	       		submitForm($form);
+	       	}
+	       	else {
+	       		alert('Please fill out where you are from!');
+	       	}
+
+	       	// USING AN OR STATEMENT FOR A SINGLE ERROR INSTEAD:
+	        // if(formName === "" || formEmail === "" || formCity === "" ) {
+	       	// 	submitForm();
+	       	// }
+	       	// else {
+	       	// 	alert('Please fill out all fields!');
+	       	// }
+
+	        function submitForm() {
+			        // this is the fancy stuff
+			        // Use Ajax to submit form data
+			        var url = 'https://docs.google.com/forms/d/1OPlZxJGmifRLLQkm0L0c7g03Cl4rL0sKgq441KqcTYI/formResponse';
+
+			        var data = $form.serialize();
+
+			        $.post(url, $form.serialize(), function() {
+
+			        }).always(function() {
+			            console.warn('Data sent to Google.');
+			            $('body').append('<div>Thank you for submitting a form!</div>')
+			        });
+		       	}
+	        }
+	    });
+	</script>
+
+</body>
+</html>
