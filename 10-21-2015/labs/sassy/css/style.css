@@ -1,0 +1,25 @@
+body {
+  margin: auto;
+  max-width: 700px;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  text-transform: uppercase;
+}
+
+header nav {
+  text-transform: uppercase;
+}
+
+header a {
+  color: #999999;
+  font-weight: bold;
+  margin: 0 2px;
+  text-decoration: none;
+}

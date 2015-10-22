@@ -1,0 +1,38 @@
+ul {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  color: white;
+  overflow: hidden;
+  position: relative;
+  width: 25%;
+}
+
+ul a {
+  color: gray;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ul img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.popup {
+  background-color: black;
+  bottom: -20px;
+  height: 140px;
+  padding: 12px;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}
