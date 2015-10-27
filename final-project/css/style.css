@@ -1,0 +1,365 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+aside {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  padding: 0 20px;
+}
+
+aside.citation {
+  clear: both;
+  font-size: 16px;
+}
+
+body {
+	background-color: #eee;
+	color: #444;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	margin: auto;
+	text-align: center;
+}
+
+body.home {
+	background-image: url("../images/bg/bg-flag.jpg");
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	height: auto;
+  	max-width: 100%;
+}
+
+button,
+.submit {
+	background-color: #70709c;
+	color: #eee;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 28px;
+	max-width: 320px;
+	padding: 16px 36px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+button:hover {
+	background-color: #7e7eb0;
+}
+
+button.btn_question {
+	margin: 0px 8px;
+	padding: 20px 42px 12px 46px;
+}
+
+button.btn_next {
+	padding: 16px 64px;
+}
+
+.info {
+  cursor: pointer;
+  margin-left: 8px;
+  padding-top: 15px;
+}
+
+.share {
+  cursor: pointer;
+  margin-right: 8px;
+  padding-top: 15px;
+}
+
+footer {
+	align-items: center;
+	background-color: #444;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	margin: 40px 0 0;
+	text-align: center;
+	width: 100%;
+}
+
+footer nav {
+	max-width: 1280px;
+	padding: 10px;
+}
+
+footer nav a {
+	color: #eee;
+	font-size: 14px;
+	padding: 0 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.form-item > * {
+    width: 100%;
+    padding: 10px;
+}
+
+.form-item {
+	color: #444;
+    margin: 10px auto;
+    max-width: 800px;
+    padding: 0 10px;
+}
+
+h1 {
+	color: #eee;
+	font-family: 'Bad Script', cursive;
+	font-size: 24px;
+	margin: 0;
+}
+
+h1.home {
+  color: #eee;
+  font-family: 'Bad Script', cursive;
+  font-size: 36px;
+  margin: 0 0 20px;
+}
+
+h1.inner {
+  color: #eee;
+  font-family: 'Bad Script', cursive;
+  font-size: 24px;
+  margin: 0px;
+}
+
+h2 {
+  	font-size: 22px;
+  	text-transform: uppercase;
+}
+
+header {
+	background-color: #444;
+	box-shadow: 0px 5px 0px black;
+	width: 100%;
+}
+
+main,
+section {
+	text-align: center;
+	margin: auto;
+	width: 100%;
+}
+
+main.inner {
+	background-color: rgba(68, 68, 68, 0.15);
+	display: flex;
+  	margin-bottom: 36px;
+}
+
+main.inner_result {
+  	background-image: url("../images/bios/bio-hillary.jpg");
+  	background-position: top right;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	color: #eee;
+  	height: auto;
+  	max-width: 100%;
+}
+
+main.inner_result h3,
+main.inner_result h4,
+main.inner_result p.candidate-quote {
+  	color: #eee;
+}
+
+section.inner {
+	max-width: 1280px;
+ 	min-height: 120px;
+ 	padding: 20px;
+}
+
+main article.inner {
+	color: #444;
+	margin: 0;
+	max-width: 1280px;
+	min-height: 200px;
+	padding: 10px 20px;
+}
+
+main article.primary {
+	color: #eee;
+	margin: 0;
+	max-width: 1280px;
+	min-height: 200px;
+	padding: 10px 20px;
+}
+
+p.intro {
+	font-size: 30px;
+}
+
+h3 {
+  	font-size: 28px;
+  	margin: 0;
+  	text-align: left;
+  	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 14px;
+	margin: 0;
+	text-align: left;
+}
+
+p.quote {
+ 	font-family: 'Raleway', sans-serif;
+}
+
+p.subtext {
+	font-size: 18px;
+}
+
+p.suggest {
+	margin: auto;
+	max-width: 800px;
+	padding: 0 10px;
+}
+
+section article.secondary {
+	background-color: #eee;
+	margin: 10px 0;
+	opacity: 0.75;
+	padding: 10px;
+	width: 100%
+}
+
+section article.secondary:hover {
+	opacity: 0.95;
+}
+
+section article.secondary a {
+	color: #444;
+  	text-decoration: none;
+}
+
+section.inner {
+    margin: auto;
+    min-height: 60px;
+    padding: 0;
+}
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+@-ms-viewport {
+	width: device-width;
+}
+
+@media screen and (min-width: 768px) {
+	aside {
+		margin: auto;
+	    max-width: 1280px;
+  	}
+ 	button {
+		font-size: 30px;
+		padding: 16px 36px;
+	}
+	button.btn_next {
+		padding: 16px 64px;
+	}
+	button.btn_question {
+	    margin: 0px 12px;
+	    padding: 20px 56px 12px 62px;
+	}
+	footer {
+		bottom: 0px;
+		margin: 40px 0 0;
+		position: fixed;
+	}
+	footer nav a {
+		font-size: 16px;
+		padding: 0 40px;
+	}
+	.form-item {
+    	padding: 0 20px;
+	}
+
+	h1 {
+	    font-size: 36px;
+	    margin: 0 0 48px;
+	}
+  	h1.home {
+	    font-size: 58px;
+	    margin: 0 0 40px;
+	}
+	h1.inner {
+	    font-size: 36px;
+	    margin: 0px 0px 48px;
+	  }
+	h2 {
+	  	font-size: 30px;
+	}
+	label.error {
+		color: red;
+		font-size: 12px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	main.home,
+	section.home {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		max-width: 1280px;
+	}
+	main article.inner {
+		min-height: 420px;
+		margin: auto;
+		padding: 30px;
+	}
+	main article.primary {
+		min-height: 420px;
+		margin: auto;
+		padding: 30px;
+	}
+	p.intro {
+		font-size: 48px;
+	}
+	h3 {
+	  	font-size: 32px;
+	}
+	h4 {
+		font-size: 18px;
+	}
+	p.quote {
+	  	font-family: 'Raleway', sans-serif;
+	}
+	p.subtext {
+		font-size: 22px;
+	}
+	p.suggest {
+		padding: 40px 20px;
+	}
+	section article.secondary {
+		min-height: 180px;
+		margin: 20px 20px 100px;
+		padding: 30px;
+		width: 50%;
+	}
+	section.inner {
+	    margin: auto;
+	    min-height: 360px;
+	    padding: 20px;
+  	}
+}
+
+@media screen and (min-width: 1280px) {
+	h1.home {
+		font-size: 72px;
+	}
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="2016 election, Swing Quote, presidential candidates, political quiz">
+	<meta name="viewport" content="width=device-width">
+	<title>Swing Quote - Quotes</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic|Raleway|Bad+Script' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- ******************************************
+* HEADER
+******************************************* -->
+
+<body>
+	<header>
+		<h1 class="inner">Swing Quote</h1>
+	</header>
+
+<!-- ******************************************
+* CONTENT: SHOW QUESTION
+******************************************* -->
+
+	<div class="show-question">
+		<aside>
+			<p id="candidate-issue" class="subtext"></p>
+		</aside>
+		<main class="inner">
+			<article class="inner">
+				<p class="candidate-quote" class="quote"></p>
+			</article>
+		</main>
+		<section class="inner">
+			<button class="btn_question">
+				<img src="images/icons/icon-x_lt.png">
+			</button>
+			<button class="btn_question">
+				<img src="images/icons/icon-check_lt.png">
+			</button>
+		</section>
+	</div>
+
+<!-- ******************************************
+* CONTENT: SHOW RESULTS
+******************************************* -->
+
+	<div class="show-result" style="display: none">
+		<aside>
+			<p class="subtext">You <strong>agreed</strong> with...</p>
+			<div class="btn_actions">
+				<img src="images/icons/icon-share_dk.png" class-"share">
+				<img src="images/icons/icon-info_dk.png" class="info">
+			</div>
+		</aside>
+		<aside class="citation" style="display:none">
+			<p id="candidate-citation"></p>
+		</aside>
+		<main class="inner_result">
+			<article class="inner">
+				<h3 id="candidate-name"></h3>
+				<h4 id="candidate-party"></h4>
+				<p class="candidate-quote" class="quote"></p>
+			</article>
+		</main>
+		<section class="inner">
+			<a href="#">
+				<button class="btn_next">Next</button>
+			</a>
+		</section>
+	</div>
+
+<!-- ******************************************
+* FOOTER
+******************************************* -->
+
+	<footer>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="quotes.html">Quotes</a>
+			<a href="candidates.html">Candidates</a>
+			<a href="submit.html">Suggest</a>
+		</nav>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/scriptS.js"></script>
+</body>
+</html>
